@@ -5,3 +5,15 @@ function myFunction() {
 }
 
 myFunction();
+
+let getEmail = document.querySelector('.my-email');
+
+getEmail.addEventListener('mouseenter', () => {
+	let email = 'octaviookumu@gmail.com';
+	getEmail.innerHTML = email;
+});
+
+getEmail.addEventListener('mouseleave', () => {
+	let email = 'hire me!!';
+	getEmail.innerHTML = email;
+});
