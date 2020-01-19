@@ -66,6 +66,10 @@ p:last-of-type {
 	margin: 0 0 .5em;
 }
 
+.button-dark {
+	background: #00ff6c;
+}
+
 .unstyled-list {
 	margin: 0;
 	padding: 0;
@@ -308,6 +312,7 @@ header img {
 .cta {
 	background-color: #00ff6c;
 	padding: 5em 0;
+	position: relative;
 }
 
 /* Footer
