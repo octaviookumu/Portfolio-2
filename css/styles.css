@@ -183,6 +183,16 @@ header img {
 	outline-offset: -2.5em;
 	color: #fff;
 	position: relative;
+	animation-name: pop;
+	animation-duration: 2s;
+}
+@keyframes pop {
+	from {
+		transform: translateY(25%);
+	}
+	to {
+		transform: translateY(0%);
+	}
 }
 
 .home-about-textbox h1 {
