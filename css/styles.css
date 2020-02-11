@@ -185,6 +185,7 @@ header img {
 	position: relative;
 	animation-name: pop;
 	animation-duration: 2s;
+	animation-delay: 3s;
 }
 @keyframes pop {
 	from {
