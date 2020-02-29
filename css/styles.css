@@ -185,6 +185,14 @@ header img {
 	position: relative;
 	animation-name: pop;
 }
+.home-about-textbox h1::selection {
+	background: #00ff6c;
+	color: #fff;
+}
+.home-about-textbox p::selection {
+	background: #00ff6c;
+	color: #fff;
+}
 .am {
 	transform: translateY(25%);
 	animation-duration: 2s;
