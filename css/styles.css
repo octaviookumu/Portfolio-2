@@ -8,10 +8,18 @@
 	transition: all ease-in-out 250ms;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
 }
 
 img {
@@ -172,6 +180,7 @@ header img {
 	background-position: center;
 	padding: 10em 0;
 	color: #fff;
+	position: relative;
 }
 
 @media (min-width: 60rem) {
@@ -180,6 +189,35 @@ header img {
 		padding-top: 35vh;
 	}
 }
+
+/* navigation to grid
+=================== */
+
+.to-grid {
+	display: none;
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.to-grid i {
+	display: block;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 1.5rem;
+	animation: up 2s infinite;
+}
+
+@media (min-width: 65rem) {
+	.to-grid {
+		display: block;
+	}
+}
+
 
 /* hero-home
 =================== */
@@ -464,4 +502,20 @@ footer p {
 	margin-top: 1rem;
 	font-weight: 700;
 	color: #fff;
+}
+
+/* animation
+=================== */
+
+@keyframes up {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
 }
